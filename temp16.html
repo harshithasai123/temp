@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+            .c{
+                background-color: yellow;
+            }
+    </style>
     <script>
         function showData(){
-            let email = document.getElementById("email").value
+           // let email = document.getElementById("email").value
+           let email = document.querySelector("input")
+           console.log(email[1].length)
             let password = document.getElementById("password").value
             data.innerHTML = `${email}, ${password}`
         }
